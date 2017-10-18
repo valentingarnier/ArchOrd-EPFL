@@ -37,13 +37,13 @@ entity controller is
 end controller;
 
 architecture synth of controller is
-type state is(FETCH1, FETCH2, DECODE, R_OP, I_OP, STORE, BREAK, LOAD1, LOAD2);
+type state is(FETCH1, FETCH2, DECODE, R_OP, I_OP, STORE, BREAK, LOAD1, LOAD2, BRANCH, CALL);
 signal currentState, nextState : state;
 begin
 
 controller1: process(currentState, op, opx)
 begin
-branch_op <= '0';
+	branch_op <= '0';
         imm_signed <= '0';
         ir_en <= '0';
         pc_add_imm <= '0';
@@ -79,6 +79,8 @@ branch_op <= '0';
 		when "000100" => nextState <= I_OP;
 		when "010111" => nextState <= LOAD1;
 		when "010101" => nextState <= STORE;
+		when ("000110" OR "001110" OR "010110" OR "011110" OR "100110" OR "101110" OR "110110")  => nextState <= BRANCH;
+		when "000000" => nextState <= CALL;
 		when others => nextState <= FETCH1;
 		end case;
 	when I_OP =>
@@ -106,6 +108,18 @@ branch_op <= '0';
 		sel_b <= '0';
 		write <= '1';
 		imm_signed <= '1';
+		nextState <= FETCH1;
+	when BRANCH => 
+		sel_b <= '1';
+		pc_add_imm <= '1';
+		nextState <= FETCH1;
+	when CALL =>
+		pc_sel_imm <= '1';
+		sel_ra <= '1';
+		sel_rC <= '1';
+		sel_pc <= '1';
+		sel_mem <= '1';
+		rf_wren <= '1';
 		nextState <= FETCH1;
 	when BREAK =>
 		nextState <= BREAK; 
