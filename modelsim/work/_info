@@ -1,0 +1,1227 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/HP PC/Google Drive/Teaching/ArchOrd Mirjana/3-multicycle_niosII-workinprogress/project_template/modelsim
+Eadd_sub
+Z0 w1506501816
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 d/home/archord/Downloads/lab03/modelsim
+Z5 8/home/archord/Downloads/lab03/vhdl/add_sub.vhd
+Z6 F/home/archord/Downloads/lab03/vhdl/add_sub.vhd
+l0
+L5
+V207_zj^V^3XmVFBkYPT0^3
+!s100 Ho^oT``GLJUNf<W@=D9Un1
+Z7 OV;C;10.5b;63
+32
+Z8 !s110 1508275897
+!i10b 1
+Z9 !s108 1508275897.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/add_sub.vhd|
+Z11 !s107 /home/archord/Downloads/lab03/vhdl/add_sub.vhd|
+!i113 1
+Z12 o-work work -2002 -explicit
+Z13 tExplicit 1 CvgOpt 0
+Asynth
+R1
+R2
+R3
+DEx4 work 7 add_sub 0 22 207_zj^V^3XmVFBkYPT0^3
+l23
+L16
+V^JBWG]WVH>J1<fbc_0dam0
+!s100 SP5EP4A_2g91_DhQ]5;G^0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ealu
+Z14 w1476133812
+R2
+R3
+R4
+Z15 8/home/archord/Downloads/lab03/vhdl/ALU.vhd
+Z16 F/home/archord/Downloads/lab03/vhdl/ALU.vhd
+l0
+L24
+VLIV0?b]kCZ40<iPbTC=4:2
+!s100 O`l`Xc5c_V9`dzon<W_fQ2
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/ALU.vhd|
+Z18 !s107 /home/archord/Downloads/lab03/vhdl/ALU.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R2
+R3
+DEx4 work 3 alu 0 22 LIV0?b]kCZ40<iPbTC=4:2
+l91
+L34
+Vn7Jhlm<g3=Igo4gAY0?Z=3
+!s100 ao^@A8=RSg[FW?jY:[EXI0
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Ebuttons
+Z19 w1507042160
+R1
+R2
+R3
+R4
+Z20 8/home/archord/Downloads/lab03/vhdl/buttons.vhd
+Z21 F/home/archord/Downloads/lab03/vhdl/buttons.vhd
+l0
+L5
+V6nKA>6XmzI`j>a@n4^6Pn2
+!s100 =22bV77NIHzbkEY31]2hQ2
+R7
+32
+Z22 !s110 1508275895
+!i10b 1
+Z23 !s108 1508275895.000000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/buttons.vhd|
+Z25 !s107 /home/archord/Downloads/lab03/vhdl/buttons.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 7 buttons 0 22 6nKA>6XmzI`j>a@n4^6Pn2
+l31
+L22
+Vz=5DD3`[2T_e1Tj`RUBgR3
+!s100 l:Q7JXKFoP5Z9FQDUXG9]3
+R7
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+R13
+Pcheck_functions
+Z26 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R2
+R3
+R19
+R4
+Z27 8../testbench/check_functions.vhd
+Z28 F../testbench/check_functions.vhd
+l0
+L6
+V6aLKC8M`WFbUTzDPW6He83
+!s100 eDnLHELO`V5ohl=5KQY@20
+R7
+31
+b1
+Z29 !s110 1508275904
+!i10b 1
+Z30 !s108 1508275904.000000
+Z31 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
+Z32 !s107 ../testbench/check_functions.vhd|
+!i113 1
+o-93
+R13
+Bbody
+Z33 DPx4 work 15 check_functions 0 22 6aLKC8M`WFbUTzDPW6He83
+R26
+R2
+R3
+l0
+L40
+Vl_?7YlfeIC=0oLhh:^F<e2
+!s100 ]Ul<gd[SNh_SV]VQVO[::0
+R7
+31
+Z34 !s110 1508275905
+!i10b 1
+R30
+R31
+R32
+!i113 1
+o-93
+R13
+Ecomparator
+Z35 w1506949869
+R2
+R3
+R4
+Z36 8/home/archord/Downloads/lab03/vhdl/comparator.vhd
+Z37 F/home/archord/Downloads/lab03/vhdl/comparator.vhd
+l0
+L4
+V3WXakLjKGIMC9fTC_zAJG3
+!s100 XTWoF>RX1>LcmLLBBo;N:0
+R7
+32
+R8
+!i10b 1
+R9
+Z38 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/comparator.vhd|
+Z39 !s107 /home/archord/Downloads/lab03/vhdl/comparator.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 10 comparator 0 22 3WXakLjKGIMC9fTC_zAJG3
+l18
+L16
+VM5eezCk_`RQ>KLG[3mB2K0
+!s100 m^EARGziUj:UdYT1bZAaE0
+R7
+32
+R8
+!i10b 1
+R9
+R38
+R39
+!i113 1
+R12
+R13
+Econtroller
+Z40 w1508275891
+R2
+R3
+R4
+Z41 8../vhdl/controller.vhd
+Z42 F../vhdl/controller.vhd
+l0
+L4
+V>:mGA0fg1bnEUkAc9L0EZ3
+!s100 iLCb?>B5ja1L5iDVmAU]]0
+R7
+31
+R29
+!i10b 1
+R30
+Z43 !s90 -reportprogress|300|-93|../vhdl/controller.vhd|
+Z44 !s107 ../vhdl/controller.vhd|
+!i113 1
+o-93
+R13
+Asynth
+R2
+R3
+DEx4 work 10 controller 0 22 >:mGA0fg1bnEUkAc9L0EZ3
+l42
+L39
+VS[dPdeOk8d3X>SA_XNEGi3
+!s100 QB^00^JKecHD5ME`LTFoi1
+R7
+31
+R29
+!i10b 1
+R30
+R43
+R44
+!i113 1
+o-93
+R13
+Ecpu
+Z45 w1507042162
+R2
+R3
+R4
+Z46 8/home/archord/Downloads/lab03/vhdl/CPU.vhd
+Z47 F/home/archord/Downloads/lab03/vhdl/CPU.vhd
+l0
+L24
+VoN1Z@H62cOJ8j76FSZXfk0
+!s100 ?^3E^YkUK_jO8j=PLQg0X0
+R7
+32
+R22
+!i10b 1
+R23
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/CPU.vhd|
+Z49 !s107 /home/archord/Downloads/lab03/vhdl/CPU.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R2
+R3
+DEx4 work 3 cpu 0 22 oN1Z@H62cOJ8j76FSZXfk0
+l168
+L37
+VU_VbP>G_0>o[AHnGEJ`7A2
+!s100 nj]fOeJzKgV2QQoiYJ37e2
+R7
+32
+R22
+!i10b 1
+R23
+R48
+R49
+!i113 1
+R12
+R13
+Edecoder
+Z50 w1507666272
+R2
+R3
+R4
+Z51 8/home/archord/Downloads/lab03/vhdl/decoder.vhd
+Z52 F/home/archord/Downloads/lab03/vhdl/decoder.vhd
+l0
+L4
+Vg`kWNNJZOkG`EgBQ]P5MT1
+!s100 =PEcUo;>3l9[;jA0omG[l2
+R7
+32
+R8
+!i10b 1
+R9
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/decoder.vhd|
+Z54 !s107 /home/archord/Downloads/lab03/vhdl/decoder.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 7 decoder 0 22 g`kWNNJZOkG`EgBQ]P5MT1
+l15
+L14
+V4zZTOOkQBMnSQTATRERK21
+!s100 8CaH5EU:kE<<C2OmNkNf?3
+R7
+32
+R8
+!i10b 1
+R9
+R53
+R54
+!i113 1
+R12
+R13
+Eextend
+Z55 w1507669745
+R2
+R3
+R4
+Z56 8/home/archord/Downloads/lab03/vhdl/extend.vhd
+Z57 F/home/archord/Downloads/lab03/vhdl/extend.vhd
+l0
+L4
+VUL_6DHeRdI@k7FglXE4m:2
+!s100 [OER<nle^Gzi[Q]KGKSL33
+R7
+32
+R22
+!i10b 1
+R23
+Z58 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/extend.vhd|
+Z59 !s107 /home/archord/Downloads/lab03/vhdl/extend.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 6 extend 0 22 UL_6DHeRdI@k7FglXE4m:2
+l14
+L12
+VG6<^9ah9ZMhfPJRJ=fd8?0
+!s100 RS[Q_ne6D4dDi_Sc0K^fR2
+R7
+32
+R22
+!i10b 1
+R23
+R58
+R59
+!i113 1
+R12
+R13
+Egecko
+R45
+R2
+R3
+R4
+Z60 8/home/archord/Downloads/lab03/vhdl/GECKO.vhd
+Z61 F/home/archord/Downloads/lab03/vhdl/GECKO.vhd
+l0
+L25
+VUUo[=d8;JL2NUd?KL5z>W3
+!s100 LSB69=RnS?7B=e740[]>J0
+R7
+32
+R22
+!i10b 1
+R23
+Z62 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/GECKO.vhd|
+Z63 !s107 /home/archord/Downloads/lab03/vhdl/GECKO.vhd|
+!i113 1
+R12
+R13
+Abdf_type
+R2
+R3
+Z64 DEx4 work 5 gecko 0 22 UUo[=d8;JL2NUd?KL5z>W3
+l122
+L42
+VXW8hfda?:0fgXTELaMc<M2
+!s100 6_aIkK46>FzI3D:<OBG:Z1
+R7
+32
+R22
+!i10b 1
+R23
+R62
+R63
+!i113 1
+R12
+R13
+Eir
+Z65 w1507669952
+R2
+R3
+R4
+Z66 8/home/archord/Downloads/lab03/vhdl/IR.vhd
+Z67 F/home/archord/Downloads/lab03/vhdl/IR.vhd
+l0
+L4
+V^D0Sz[@@D76hLF6hc_Qm`1
+!s100 g>VC3<ZiU9SUL1eB^Hc9_3
+R7
+32
+R22
+!i10b 1
+R23
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/IR.vhd|
+Z69 !s107 /home/archord/Downloads/lab03/vhdl/IR.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 2 ir 0 22 ^D0Sz[@@D76hLF6hc_Qm`1
+l14
+L13
+VHPO>BId@CHUG3c<0@Ng:<3
+!s100 Y]RjTAROlEM8FA_G4hO?^1
+R7
+32
+R22
+!i10b 1
+R23
+R68
+R69
+!i113 1
+R12
+R13
+Eleds
+Z70 w1476134000
+R1
+R2
+R3
+R4
+Z71 8/home/archord/Downloads/lab03/vhdl/LEDs.vhd
+Z72 F/home/archord/Downloads/lab03/vhdl/LEDs.vhd
+l0
+L5
+V82^IRfHNag^>;Yc>Z[nm>3
+!s100 LBhnQz<diU;5h1EbFfFEW1
+R7
+32
+R8
+!i10b 1
+R9
+Z73 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/LEDs.vhd|
+Z74 !s107 /home/archord/Downloads/lab03/vhdl/LEDs.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 4 leds 0 22 82^IRfHNag^>;Yc>Z[nm>3
+l34
+L22
+Vj;cD^kSPz:JHjlD@L]j;81
+!s100 ^Eb^?kG1CKeS`DJCfdSl82
+R7
+32
+R8
+!i10b 1
+R9
+R73
+R74
+!i113 1
+R12
+R13
+Elogic_unit
+Z75 w1506498322
+R2
+R3
+R4
+Z76 8/home/archord/Downloads/lab03/vhdl/logic_unit.vhd
+Z77 F/home/archord/Downloads/lab03/vhdl/logic_unit.vhd
+l0
+L5
+VJVzOmAB1b=d@k_j=G=Ugf3
+!s100 hc[8PZ1DYZS4cfK;>l6Q^3
+R7
+32
+R8
+!i10b 1
+R9
+Z78 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/logic_unit.vhd|
+Z79 !s107 /home/archord/Downloads/lab03/vhdl/logic_unit.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 10 logic_unit 0 22 JVzOmAB1b=d@k_j=G=Ugf3
+l16
+L14
+Vi0jOj?Q[h=?lQ7lI5k;c:0
+!s100 >OCXKeHh2nePj;m>HUB:h1
+R7
+32
+R8
+!i10b 1
+R9
+R78
+R79
+!i113 1
+R12
+R13
+Emultiplexer
+Z80 w1506502590
+R2
+R3
+R4
+Z81 8/home/archord/Downloads/lab03/vhdl/multiplexer.vhd
+Z82 F/home/archord/Downloads/lab03/vhdl/multiplexer.vhd
+l0
+L4
+V4iH6`nZgBAHVia??bJk>G2
+!s100 UDM^5ga=kb9Z[=K^]bghV0
+R7
+32
+Z83 !s110 1508275898
+!i10b 1
+R9
+Z84 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/multiplexer.vhd|
+Z85 !s107 /home/archord/Downloads/lab03/vhdl/multiplexer.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 11 multiplexer 0 22 4iH6`nZgBAHVia??bJk>G2
+l17
+L15
+VHXzadFV^FCEUWk7M?PHSl1
+!s100 =9iAFQ;c5aP1z^C93AB0=3
+R7
+32
+R83
+!i10b 1
+R9
+R84
+R85
+!i113 1
+R12
+R13
+Emux2x16
+Z86 w1507667342
+R2
+R3
+R4
+Z87 8/home/archord/Downloads/lab03/vhdl/mux2x16.vhd
+Z88 F/home/archord/Downloads/lab03/vhdl/mux2x16.vhd
+l0
+L4
+VaHOL`3MF?g?d`[6<SJm^e1
+!s100 ]AkMHg3_OS9:k6cjVd[b:3
+R7
+32
+Z89 !s110 1508275896
+!i10b 1
+Z90 !s108 1508275896.000000
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/mux2x16.vhd|
+Z92 !s107 /home/archord/Downloads/lab03/vhdl/mux2x16.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 7 mux2x16 0 22 aHOL`3MF?g?d`[6<SJm^e1
+l14
+L13
+V`BGHdj_J]3O5cV3hVi4@:3
+!s100 OS[I@hEV`on?W>f9BmR^`0
+R7
+32
+R89
+!i10b 1
+R90
+R91
+R92
+!i113 1
+R12
+R13
+Emux2x32
+Z93 w1507667365
+R2
+R3
+R4
+Z94 8/home/archord/Downloads/lab03/vhdl/mux2x32.vhd
+Z95 F/home/archord/Downloads/lab03/vhdl/mux2x32.vhd
+l0
+L4
+V5<9;E?13m3J1aF01KEAAR1
+!s100 Iab^5l@hZCaSi22IEjFiN0
+R7
+32
+R89
+!i10b 1
+R90
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/mux2x32.vhd|
+Z97 !s107 /home/archord/Downloads/lab03/vhdl/mux2x32.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 7 mux2x32 0 22 5<9;E?13m3J1aF01KEAAR1
+l14
+L13
+V>RGR43;_BSFXbA[lYLh@b1
+!s100 e^^H4jjRhXo8MaIM0giCP2
+R7
+32
+R89
+!i10b 1
+R90
+R96
+R97
+!i113 1
+R12
+R13
+Emux2x5
+Z98 w1507667370
+R2
+R3
+R4
+Z99 8/home/archord/Downloads/lab03/vhdl/mux2x5.vhd
+Z100 F/home/archord/Downloads/lab03/vhdl/mux2x5.vhd
+l0
+L4
+VjO?0@YzP85eR^P6ocQT^z3
+!s100 YZz2_?mdfV]_8:8?M8DMW3
+R7
+32
+R89
+!i10b 1
+R23
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/mux2x5.vhd|
+Z102 !s107 /home/archord/Downloads/lab03/vhdl/mux2x5.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 6 mux2x5 0 22 jO?0@YzP85eR^P6ocQT^z3
+l14
+L13
+VH:^Jc8[Qfgz160F0P]fX]2
+!s100 1U[cQOjAmdM7]:Pf7:YfA3
+R7
+32
+R89
+!i10b 1
+R23
+R101
+R102
+!i113 1
+R12
+R13
+Ppack
+Z103 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z104 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+R2
+R3
+Z105 w1476133968
+R4
+Z106 8/home/archord/Downloads/lab03/modelsim/rgb_led96.vhd
+Z107 F/home/archord/Downloads/lab03/modelsim/rgb_led96.vhd
+l0
+L12
+VSgkf7C>zV<_V6E^@jUKD^3
+!s100 FB]U9M?hE8E5iehJ9[AWh3
+R7
+32
+b1
+Z108 !s110 1508253606
+!i10b 1
+Z109 !s108 1508253606.000000
+Z110 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/modelsim/rgb_led96.vhd|
+Z111 !s107 /home/archord/Downloads/lab03/modelsim/rgb_led96.vhd|
+!i113 1
+R12
+R13
+Bbody
+Z112 DPx4 work 4 pack 0 22 Sgkf7C>zV<_V6E^@jUKD^3
+R103
+R104
+R2
+R3
+l0
+L17
+VQ[i6CQaWYOi37nk]<RCBH3
+!s100 8]CiCz8GM]b_8`cfK=T:`2
+R7
+32
+R108
+!i10b 1
+R109
+R110
+R111
+!i113 1
+R12
+R13
+Epc
+Z113 w1507706061
+R1
+R2
+R3
+R4
+Z114 8/home/archord/Downloads/lab03/vhdl/PC.vhd
+Z115 F/home/archord/Downloads/lab03/vhdl/PC.vhd
+l0
+L5
+VL1PS=`^7Dom5JHh`oiS8z0
+!s100 Vz;DIYb[AY;g5[laVME<e3
+R7
+32
+R89
+!i10b 1
+R90
+Z116 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/PC.vhd|
+Z117 !s107 /home/archord/Downloads/lab03/vhdl/PC.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 2 pc 0 22 L1PS=`^7Dom5JHh`oiS8z0
+l20
+L19
+VBe`k2_gAdRm3T^^^=fC2U0
+!s100 zfDoflWhNYzoe4YI9kdS^3
+R7
+32
+R89
+!i10b 1
+R90
+R116
+R117
+!i113 1
+R12
+R13
+Eram
+Z118 w1507111981
+R1
+R2
+R3
+R4
+Z119 8/home/archord/Downloads/lab03/vhdl/RAM.vhd
+Z120 F/home/archord/Downloads/lab03/vhdl/RAM.vhd
+l0
+L5
+VJiWAmLGUWmdVPB8L2QZ[D3
+!s100 9O>00CFElD4PLMkihiTWm3
+R7
+32
+R83
+!i10b 1
+Z121 !s108 1508275898.000000
+Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/RAM.vhd|
+Z123 !s107 /home/archord/Downloads/lab03/vhdl/RAM.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 3 ram 0 22 JiWAmLGUWmdVPB8L2QZ[D3
+l21
+L16
+VeC^[[:H3<Lc36_iELGOA60
+!s100 KfOjN9TaCc[H62Pm::l`Y2
+R7
+32
+R83
+!i10b 1
+R121
+R122
+R123
+!i113 1
+R12
+R13
+Eregister_file
+Z124 w1507101587
+R1
+R2
+R3
+R4
+Z125 8/home/archord/Downloads/lab03/vhdl/register_file.vhd
+Z126 F/home/archord/Downloads/lab03/vhdl/register_file.vhd
+l0
+L5
+VhQYRZ<6ijZW2:hk46k4IZ2
+!s100 _;mToXbZzY:WVO^oMIJ;J3
+R7
+32
+R83
+!i10b 1
+R121
+Z127 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/register_file.vhd|
+Z128 !s107 /home/archord/Downloads/lab03/vhdl/register_file.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 13 register_file 0 22 hQYRZ<6ijZW2:hk46k4IZ2
+l21
+L18
+VN:4noPE[1hAFmMEI=lSgQ1
+!s100 _>?F8RXCIl`TJmjF3a5nj3
+R7
+32
+R83
+!i10b 1
+R121
+R127
+R128
+!i113 1
+R12
+R13
+Ergb_led96
+R105
+R112
+R104
+R103
+R2
+R3
+R4
+R106
+R107
+l0
+L46
+VDn00^;b6BmV8c[7[]6<CU2
+!s100 X:YKB@hW0<LC:6C595LeJ0
+R7
+32
+R108
+!i10b 1
+R109
+R110
+R111
+!i113 1
+R12
+R13
+Aarch
+R112
+R104
+R103
+R2
+R3
+DEx4 work 9 rgb_led96 0 22 Dn00^;b6BmV8c[7[]6<CU2
+l144
+L80
+VVMLEXCQSI_@JdCBGa]SIz1
+!s100 g<aGZ1bIK0AWZCQOUK`ba3
+R7
+32
+R108
+!i10b 1
+R109
+R110
+R111
+!i113 1
+R12
+R13
+Erom
+Z129 w1507139769
+R2
+R3
+R4
+Z130 8/home/archord/Downloads/lab03/vhdl/ROM.vhd
+Z131 F/home/archord/Downloads/lab03/vhdl/ROM.vhd
+l0
+L4
+VLD>LKJh0<<KfR_G::f?6B1
+!s100 LzhnA0@bLeKPHkcXf<L3g3
+R7
+32
+R83
+!i10b 1
+R121
+Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/ROM.vhd|
+Z133 !s107 /home/archord/Downloads/lab03/vhdl/ROM.vhd|
+!i113 1
+R12
+R13
+Asynth
+R2
+R3
+DEx4 work 3 rom 0 22 LD>LKJh0<<KfR_G::f?6B1
+l25
+L14
+Vbc=EI>:RnXLJBHBbe69_B3
+!s100 ^_TJJ]b:]belO=MMR6z613
+R7
+32
+R83
+!i10b 1
+R121
+R132
+R133
+!i113 1
+R12
+R13
+Erom_block
+Z134 w1507368792
+R2
+R3
+R4
+Z135 8/home/archord/Downloads/lab03/vhdl/ROM_Block.vhd
+Z136 F/home/archord/Downloads/lab03/vhdl/ROM_Block.vhd
+l0
+L42
+VCf[gZ]hQBZigaT1P:e9O01
+!s100 Fb1^C3b1G3KcM]0dFoPHV2
+R7
+32
+R83
+!i10b 1
+R121
+Z137 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/ROM_Block.vhd|
+Z138 !s107 /home/archord/Downloads/lab03/vhdl/ROM_Block.vhd|
+!i113 1
+R12
+R13
+Asyn
+R2
+R3
+DEx4 work 9 rom_block 0 22 Cf[gZ]hQBZigaT1P:e9O01
+l82
+L52
+V8^OV1z8UZoeoEHl9995Ho1
+!s100 :kZoGk7kefM5Th=G:;i^Y1
+R7
+32
+R83
+!i10b 1
+R121
+R137
+R138
+!i113 1
+R12
+R13
+Eshift_unit
+Z139 w1506945904
+R1
+R2
+R3
+R4
+Z140 8/home/archord/Downloads/lab03/vhdl/shift_unit.vhd
+Z141 F/home/archord/Downloads/lab03/vhdl/shift_unit.vhd
+l0
+L5
+VoYz=ZP:Rg2U9Eb=ZGo>940
+!s100 C4@E7NN0:UB89P^MW405S0
+R7
+32
+R83
+!i10b 1
+R121
+Z142 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/vhdl/shift_unit.vhd|
+Z143 !s107 /home/archord/Downloads/lab03/vhdl/shift_unit.vhd|
+!i113 1
+R12
+R13
+Asynth
+R1
+R2
+R3
+DEx4 work 10 shift_unit 0 22 oYz=ZP:Rg2U9Eb=ZGo>940
+l16
+L14
+Vz_bXNVOEJS<6Y`PIa:?C30
+!s100 kcm1cTe3ZT7X>SeXYS7E=1
+R7
+32
+R83
+!i10b 1
+R121
+R142
+R143
+!i113 1
+R12
+R13
+Etb_controller
+Z144 w1508252553
+R33
+R26
+R1
+R2
+R3
+R4
+Z145 8../testbench/tb_Controller.vhd
+Z146 F../testbench/tb_Controller.vhd
+l0
+L9
+V3E@KN_PfWzKDMi@e_IcgN1
+!s100 QPYMI?@zF<fA]gVd9c[kS0
+R7
+31
+R34
+!i10b 1
+Z147 !s108 1508275905.000000
+Z148 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
+Z149 !s107 ../testbench/tb_Controller.vhd|
+!i113 1
+o-93
+R13
+Atestbench
+R33
+R26
+R1
+R2
+R3
+DEx4 work 13 tb_controller 0 22 3E@KN_PfWzKDMi@e_IcgN1
+l102
+L15
+Vz;;75=oQ_KlKSB2QoUk3V3
+Z150 !s100 B[9jFA=_<]f06m5^zPY2g3
+R7
+31
+R34
+!i10b 1
+R147
+R148
+R149
+!i113 1
+o-93
+R13
+Etb_extend
+Z151 w1508252642
+Z152 DPx4 work 15 check_functions 0 22 <W1[dk2LN3hi[c?7kCXRb3
+R26
+R2
+R3
+R4
+Z153 8/home/archord/Downloads/lab03/testbench/tb_Extend.vhd
+Z154 F/home/archord/Downloads/lab03/testbench/tb_Extend.vhd
+l0
+L8
+Vaaa357Ec4Z]hSVLzLa]`V0
+!s100 bW1ZJ800R3O0<C<7nO4h:1
+R7
+32
+R89
+!i10b 1
+R90
+Z155 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/testbench/tb_Extend.vhd|
+Z156 !s107 /home/archord/Downloads/lab03/testbench/tb_Extend.vhd|
+!i113 1
+R12
+R13
+Atestbench
+R152
+R26
+R2
+R3
+DEx4 work 9 tb_extend 0 22 aaa357Ec4Z]hSVLzLa]`V0
+l31
+L11
+VUaZ@KYBa?KfAINKVBGbW40
+!s100 ]<=:`Bz:E4R@G9aC:<J>j3
+R7
+32
+R89
+!i10b 1
+R90
+R155
+R156
+!i113 1
+R12
+R13
+Etb_gecko
+R19
+R2
+R3
+R4
+Z157 8/home/archord/Downloads/lab03/testbench/tb_GECKO.vhd
+Z158 F/home/archord/Downloads/lab03/testbench/tb_GECKO.vhd
+l0
+L4
+V5Tbz7Kl=147iIIz>>A8Y[3
+!s100 M92[;29_Yc:FoKCCIgj]?0
+R7
+32
+R89
+!i10b 1
+R90
+Z159 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/testbench/tb_GECKO.vhd|
+Z160 !s107 /home/archord/Downloads/lab03/testbench/tb_GECKO.vhd|
+!i113 1
+R12
+R13
+Atestbench
+R64
+R2
+R3
+DEx4 work 8 tb_gecko 0 22 5Tbz7Kl=147iIIz>>A8Y[3
+l14
+L7
+V6fQEk`>ELI8^:O]bcf[0k0
+!s100 1395I=^FjK==Lo:2:Ck6c3
+R7
+32
+R89
+!i10b 1
+R90
+R159
+R160
+!i113 1
+R12
+R13
+Etb_ir
+Z161 w1507670638
+R152
+R26
+R2
+R3
+R4
+Z162 8/home/archord/Downloads/lab03/testbench/tb_IR.vhd
+Z163 F/home/archord/Downloads/lab03/testbench/tb_IR.vhd
+l0
+L8
+VNa]DdS==`51QO9@9@NCYO3
+!s100 dO7:P:CO76Dg9T_Q>3Mi:2
+R7
+32
+R8
+!i10b 1
+R90
+Z164 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/testbench/tb_IR.vhd|
+Z165 !s107 /home/archord/Downloads/lab03/testbench/tb_IR.vhd|
+!i113 1
+R12
+R13
+Atestbench
+R152
+R26
+R2
+R3
+DEx4 work 5 tb_ir 0 22 Na]DdS==`51QO9@9@NCYO3
+l32
+L11
+Vc=?6]>X2PzRza=emEzg><0
+!s100 f=l14h;ifcClGn`S`2N>M1
+R7
+32
+R8
+!i10b 1
+R90
+R164
+R165
+!i113 1
+R12
+R13
+Etb_pc
+Z166 w1507670733
+R152
+R26
+R2
+R3
+R4
+Z167 8/home/archord/Downloads/lab03/testbench/tb_PC.vhd
+Z168 F/home/archord/Downloads/lab03/testbench/tb_PC.vhd
+l0
+L8
+VZbiH9]DK4fmMF;^e8W7zF1
+!s100 _Sjg^6a@flK7I1KVlG]Sm2
+R7
+32
+R8
+!i10b 1
+R9
+Z169 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|/home/archord/Downloads/lab03/testbench/tb_PC.vhd|
+Z170 !s107 /home/archord/Downloads/lab03/testbench/tb_PC.vhd|
+!i113 1
+R12
+R13
+Atestbench
+R152
+R26
+R2
+R3
+DEx4 work 5 tb_pc 0 22 ZbiH9]DK4fmMF;^e8W7zF1
+l42
+L11
+V__UFkonT<UCoOcoM__>PT3
+!s100 >4P:05Zg4GLFh3[N04a0Z2
+R7
+32
+R8
+!i10b 1
+R9
+R169
+R170
+!i113 1
+R12
+R13
