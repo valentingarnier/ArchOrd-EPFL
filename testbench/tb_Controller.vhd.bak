@@ -8,7 +8,7 @@ use work.check_functions.all;
 
 entity tb_Controller is
     generic(
-        text_in : string := "/home/archord/Downloads/lab03/modelsim/Controller/in.txt"
+        text_in : string := "Controller/in.txt"
     );
 end;
 

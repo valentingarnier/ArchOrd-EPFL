@@ -14,19 +14,19 @@ Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 Z4 dC:/Users/vgarnier/Desktop/ArchOrd-EPFL/modelsim
-Z5 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/add_sub.vhd
-Z6 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/add_sub.vhd
+Z5 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\add_sub.vhd
+Z6 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\add_sub.vhd
 l0
 L5
 Vm1AZZBaQ<eh]J`diC=eE:3
 !s100 Ho^oT``GLJUNf<W@=D9Un1
 Z7 OV;C;10.4d;61
 32
-Z8 !s110 1508308802
+Z8 !s110 1508317316
 !i10b 1
-Z9 !s108 1508308802.000000
-Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/add_sub.vhd|
-Z11 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/add_sub.vhd|
+Z9 !s108 1508317316.000000
+Z10 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\add_sub.vhd|
+Z11 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\add_sub.vhd|
 !i113 1
 Z12 o-work work -2002 -explicit
 Z13 tExplicit 1
@@ -54,8 +54,8 @@ R0
 R2
 R3
 R4
-Z14 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ALU.vhd
-Z15 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ALU.vhd
+Z14 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ALU.vhd
+Z15 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ALU.vhd
 l0
 L24
 V8<glFz8kcJeba`X[DIBDZ2
@@ -65,8 +65,8 @@ R7
 R8
 !i10b 1
 R9
-Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ALU.vhd|
-Z17 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ALU.vhd|
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ALU.vhd|
+Z17 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ALU.vhd|
 !i113 1
 R12
 R13
@@ -102,9 +102,9 @@ VPEQXAW7W<453a7Sn4;?UT0
 !s100 =22bV77NIHzbkEY31]2hQ2
 R7
 32
-Z20 !s110 1508308801
+Z20 !s110 1508317315
 !i10b 1
-Z21 !s108 1508308801.000000
+Z21 !s108 1508317315.000000
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/buttons.vhd|
 Z23 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/buttons.vhd|
 !i113 1
@@ -135,49 +135,49 @@ R2
 R3
 R0
 R4
-Z25 8../testbench/check_functions.vhd
-Z26 F../testbench/check_functions.vhd
+Z25 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/check_functions.vhd
+Z26 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/check_functions.vhd
 l0
 L6
-VRYe`2[4U73X[nK3nC6gei3
+VonRRF7WGVmXHT2A`je1oj3
 !s100 eDnLHELO`V5ohl=5KQY@20
 R7
-31
+32
 b1
-Z27 !s110 1508308832
+R20
 !i10b 1
-Z28 !s108 1508308832.000000
-Z29 !s90 -reportprogress|300|-93|../testbench/check_functions.vhd|
-Z30 !s107 ../testbench/check_functions.vhd|
+R21
+Z27 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/check_functions.vhd|
+Z28 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/check_functions.vhd|
 !i113 1
-o-93
+R12
 R13
 Bbody
-Z31 DPx4 work 15 check_functions 0 22 RYe`2[4U73X[nK3nC6gei3
+Z29 DPx4 work 15 check_functions 0 22 onRRF7WGVmXHT2A`je1oj3
 R24
 R2
 R3
 l0
 L40
-VoehS8`bKGCdlHBEzNX8R21
+VDf`abVD;IAkl3B9?c<l?c1
 !s100 ]Ul<gd[SNh_SV]VQVO[::0
 R7
-31
-R27
+32
+R20
 !i10b 1
+R21
+R27
 R28
-R29
-R30
 !i113 1
-o-93
+R12
 R13
 Ecomparator
 R0
 R2
 R3
 R4
-Z32 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/comparator.vhd
-Z33 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/comparator.vhd
+Z30 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\comparator.vhd
+Z31 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\comparator.vhd
 l0
 L4
 VXoW@XPARkkA_@WZF0O4AH2
@@ -187,8 +187,8 @@ R7
 R8
 !i10b 1
 R9
-Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/comparator.vhd|
-Z35 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/comparator.vhd|
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\comparator.vhd|
+Z33 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\comparator.vhd|
 !i113 1
 R12
 R13
@@ -205,57 +205,57 @@ R7
 R8
 !i10b 1
 R9
-R34
-R35
+R32
+R33
 !i113 1
 R12
 R13
 Econtroller
-R0
+Z34 w1508317178
 R2
 R3
 R4
-Z36 8../vhdl/controller.vhd
-Z37 F../vhdl/controller.vhd
+Z35 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\controller.vhd
+Z36 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\controller.vhd
 l0
 L4
-V6FhG[9W_gPzHhLgmk`Tje2
+VjHHUG4C6Qh7naPDKVKG1K0
 !s100 iLCb?>B5ja1L5iDVmAU]]0
 R7
-31
-R27
+32
+R20
 !i10b 1
-R28
-Z38 !s90 -reportprogress|300|-93|../vhdl/controller.vhd|
-Z39 !s107 ../vhdl/controller.vhd|
+R21
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\controller.vhd|
+Z38 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\controller.vhd|
 !i113 1
-o-93
+R12
 R13
 Asynth
 R2
 R3
-DEx4 work 10 controller 0 22 6FhG[9W_gPzHhLgmk`Tje2
+DEx4 work 10 controller 0 22 jHHUG4C6Qh7naPDKVKG1K0
 l42
 L39
-Vd@FgM`Xl;PiS7fLigCQVV2
-!s100 QB^00^JKecHD5ME`LTFoi1
+VU_P7i;@UiTk6UCIZ4Gfz@0
+!s100 XjFR7E9e3m]G36IJ^;mY:3
 R7
-31
-R27
+32
+R20
 !i10b 1
-R28
+R21
+R37
 R38
-R39
 !i113 1
-o-93
+R12
 R13
 Ecpu
 R0
 R2
 R3
 R4
-Z40 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/CPU.vhd
-Z41 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/CPU.vhd
+Z39 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\CPU.vhd
+Z40 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\CPU.vhd
 l0
 L24
 VF]QBjIkKQmPm31jVNKLce1
@@ -265,8 +265,8 @@ R7
 R20
 !i10b 1
 R21
-Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/CPU.vhd|
-Z43 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/CPU.vhd|
+Z41 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\CPU.vhd|
+Z42 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\CPU.vhd|
 !i113 1
 R12
 R13
@@ -283,8 +283,8 @@ R7
 R20
 !i10b 1
 R21
+R41
 R42
-R43
 !i113 1
 R12
 R13
@@ -293,8 +293,8 @@ R0
 R2
 R3
 R4
-Z44 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd
-Z45 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd
+Z43 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd
+Z44 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd
 l0
 L4
 VkFd^1JRg2b4@K8K`fJQZZ0
@@ -304,8 +304,8 @@ R7
 R8
 !i10b 1
 R9
-Z46 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd|
-Z47 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd|
+Z45 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd|
+Z46 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/decoder.vhd|
 !i113 1
 R12
 R13
@@ -322,8 +322,8 @@ R7
 R8
 !i10b 1
 R9
+R45
 R46
-R47
 !i113 1
 R12
 R13
@@ -332,8 +332,8 @@ R0
 R2
 R3
 R4
-Z48 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd
-Z49 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd
+Z47 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd
+Z48 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd
 l0
 L4
 VhUgKj2cghQg:_G_F_8>RC1
@@ -343,8 +343,8 @@ R7
 R20
 !i10b 1
 R21
-Z50 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd|
-Z51 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd|
+Z49 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd|
+Z50 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/extend.vhd|
 !i113 1
 R12
 R13
@@ -361,8 +361,8 @@ R7
 R20
 !i10b 1
 R21
+R49
 R50
-R51
 !i113 1
 R12
 R13
@@ -371,8 +371,8 @@ R0
 R2
 R3
 R4
-Z52 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/GECKO.vhd
-Z53 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/GECKO.vhd
+Z51 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\GECKO.vhd
+Z52 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\GECKO.vhd
 l0
 L25
 V06cQob8dEQ_LDCQ]gSl5I1
@@ -382,15 +382,15 @@ R7
 R20
 !i10b 1
 R21
-Z54 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/GECKO.vhd|
-Z55 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/GECKO.vhd|
+Z53 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\GECKO.vhd|
+Z54 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\GECKO.vhd|
 !i113 1
 R12
 R13
 Abdf_type
 R2
 R3
-Z56 DEx4 work 5 gecko 0 22 06cQob8dEQ_LDCQ]gSl5I1
+Z55 DEx4 work 5 gecko 0 22 06cQob8dEQ_LDCQ]gSl5I1
 l122
 L42
 Vlo6f;R38U^15l623FRnbH1
@@ -400,18 +400,18 @@ R7
 R20
 !i10b 1
 R21
+R53
 R54
-R55
 !i113 1
 R12
 R13
 Eir
-R0
+Z56 w1508312800
 R2
 R3
 R4
-Z57 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/IR.vhd
-Z58 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/IR.vhd
+Z57 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\IR.vhd
+Z58 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\IR.vhd
 l0
 L4
 VWzEPzeIiWN2alaakGdXRm1
@@ -421,8 +421,8 @@ R7
 R20
 !i10b 1
 R21
-Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/IR.vhd|
-Z60 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/IR.vhd|
+Z59 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\IR.vhd|
+Z60 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\IR.vhd|
 !i113 1
 R12
 R13
@@ -450,8 +450,8 @@ R1
 R2
 R3
 R4
-Z61 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/LEDs.vhd
-Z62 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/LEDs.vhd
+Z61 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\LEDs.vhd
+Z62 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\LEDs.vhd
 l0
 L5
 V>^M4Wbk:IlgEaJD[k]7Ud3
@@ -461,8 +461,8 @@ R7
 R8
 !i10b 1
 R9
-Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/LEDs.vhd|
-Z64 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/LEDs.vhd|
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\LEDs.vhd|
+Z64 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\LEDs.vhd|
 !i113 1
 R12
 R13
@@ -490,8 +490,8 @@ R0
 R2
 R3
 R4
-Z65 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/logic_unit.vhd
-Z66 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/logic_unit.vhd
+Z65 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\logic_unit.vhd
+Z66 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\logic_unit.vhd
 l0
 L5
 VWFDJiWYdA;[9?Qjc6H2d13
@@ -501,8 +501,8 @@ R7
 R8
 !i10b 1
 R9
-Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/logic_unit.vhd|
-Z68 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/logic_unit.vhd|
+Z67 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\logic_unit.vhd|
+Z68 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\logic_unit.vhd|
 !i113 1
 R12
 R13
@@ -529,8 +529,8 @@ R0
 R2
 R3
 R4
-Z69 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/multiplexer.vhd
-Z70 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/multiplexer.vhd
+Z69 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\multiplexer.vhd
+Z70 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\multiplexer.vhd
 l0
 L4
 VD]4`eUA@LQVl]dPV?H7LA0
@@ -540,8 +540,8 @@ R7
 R8
 !i10b 1
 R9
-Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/multiplexer.vhd|
-Z72 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/multiplexer.vhd|
+Z71 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\multiplexer.vhd|
+Z72 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\multiplexer.vhd|
 !i113 1
 R12
 R13
@@ -646,8 +646,8 @@ R0
 R2
 R3
 R4
-Z81 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/mux2x5.vhd
-Z82 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/mux2x5.vhd
+Z81 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\mux2x5.vhd
+Z82 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\mux2x5.vhd
 l0
 L4
 VGH9SU9PNQ>>DbQP^;l]832
@@ -657,8 +657,8 @@ R7
 R20
 !i10b 1
 R21
-Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/mux2x5.vhd|
-Z84 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/mux2x5.vhd|
+Z83 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\mux2x5.vhd|
+Z84 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\mux2x5.vhd|
 !i113 1
 R12
 R13
@@ -771,8 +771,8 @@ R1
 R2
 R3
 R4
-Z102 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/RAM.vhd
-Z103 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/RAM.vhd
+Z102 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\RAM.vhd
+Z103 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\RAM.vhd
 l0
 L5
 V5d43ICS7]Eh2JGX^C5LI01
@@ -782,8 +782,8 @@ R7
 R8
 !i10b 1
 R9
-Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/RAM.vhd|
-Z105 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/RAM.vhd|
+Z104 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\RAM.vhd|
+Z105 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\RAM.vhd|
 !i113 1
 R12
 R13
@@ -812,19 +812,19 @@ R1
 R2
 R3
 R4
-Z106 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/register_file.vhd
-Z107 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/register_file.vhd
+Z106 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\register_file.vhd
+Z107 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\register_file.vhd
 l0
 L5
 VP=_OLjeUgi_l]bSkToh0Z1
 !s100 _;mToXbZzY:WVO^oMIJ;J3
 R7
 32
-Z108 !s110 1508308803
+R8
 !i10b 1
 R9
-Z109 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/register_file.vhd|
-Z110 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/register_file.vhd|
+Z108 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\register_file.vhd|
+Z109 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\register_file.vhd|
 !i113 1
 R12
 R13
@@ -839,11 +839,11 @@ V?8H:A[SYB`P267XgD>CDh3
 !s100 _>?F8RXCIl`TJmjF3a5nj3
 R7
 32
-R108
+R8
 !i10b 1
 R9
+R108
 R109
-R110
 !i113 1
 R12
 R13
@@ -893,23 +893,23 @@ R95
 R12
 R96
 Erom
-R0
+Z110 w1508316888
 R2
 R3
 R4
-Z111 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM.vhd
-Z112 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM.vhd
+Z111 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM.vhd
+Z112 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM.vhd
 l0
 L4
 V:_VfbA7=JbCS25:1b[oEk2
 !s100 LzhnA0@bLeKPHkcXf<L3g3
 R7
 32
-R108
+R8
 !i10b 1
-Z113 !s108 1508308803.000000
-Z114 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM.vhd|
-Z115 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM.vhd|
+R9
+Z113 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM.vhd|
+Z114 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM.vhd|
 !i113 1
 R12
 R13
@@ -917,56 +917,58 @@ Asynth
 R2
 R3
 DEx4 work 3 rom 0 22 :_VfbA7=JbCS25:1b[oEk2
-l25
+l26
 L14
-V^^H49^c<bHSMDN]Bn_jzA1
-!s100 ^_TJJ]b:]belO=MMR6z613
+VkMRHm_SnmmG]o?P^eK?ln3
+!s100 Dj1R9^6AJYKfUji]fjEQ@1
 R7
 32
-R108
+R8
 !i10b 1
+R9
 R113
 R114
-R115
 !i113 1
 R12
 R13
 Erom_block
-R0
+Z115 w1508310472
+Z116 DPx9 altera_mf 20 altera_mf_components 0 22 JIZVPUohD7dNa?8:C5^LG2
 R2
 R3
 R4
-Z116 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM_Block.vhd
-Z117 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM_Block.vhd
+Z117 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM_Block.vhd
+Z118 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM_Block.vhd
 l0
-L42
-V@@KU971]VcYTUnLDWjB9m0
-!s100 Fb1^C3b1G3KcM]0dFoPHV2
+L43
+VadhM7T6IRMK?lL2Y_XD8d0
+!s100 ]8Q[GP[YlW48DPj49SUTX2
 R7
 32
-R108
+R8
 !i10b 1
-R113
-Z118 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM_Block.vhd|
-Z119 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/ROM_Block.vhd|
+R9
+Z119 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM_Block.vhd|
+Z120 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\vhdl\ROM_Block.vhd|
 !i113 1
 R12
 R13
 Asyn
+R116
 R2
 R3
-DEx4 work 9 rom_block 0 22 @@KU971]VcYTUnLDWjB9m0
-l82
-L52
-VQVeVi]fdA^QLVH2AiP4D00
-!s100 :kZoGk7kefM5Th=G:;i^Y1
+DEx4 work 9 rom_block 0 22 adhM7T6IRMK?lL2Y_XD8d0
+l57
+L53
+VQM^>mB<05;S2G[Lg?@1Y11
+!s100 88>Z9XeOVaRC@:>9BRUAf1
 R7
 32
-R108
+R8
 !i10b 1
-R113
-R118
+R9
 R119
+R120
 !i113 1
 R12
 R13
@@ -976,19 +978,19 @@ R1
 R2
 R3
 R4
-Z120 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd
-Z121 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd
+Z121 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd
+Z122 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd
 l0
 L5
 Vo?fcYD=jmkbNm<ezbP6bN2
 !s100 C4@E7NN0:UB89P^MW405S0
 R7
 32
-R108
+R8
 !i10b 1
-R113
-Z122 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd|
-Z123 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd|
+R9
+Z123 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd|
+Z124 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/vhdl/shift_unit.vhd|
 !i113 1
 R12
 R13
@@ -996,91 +998,91 @@ Asynth
 R1
 R2
 R3
-DEx4 work 10 shift_unit 0 22 o?fcYD=jmkbNm<ezbP6bN2
+Z125 DEx4 work 10 shift_unit 0 22 o?fcYD=jmkbNm<ezbP6bN2
 l16
 L14
-V4bS>>91Tlo^4AA3]@:BLn3
-!s100 kcm1cTe3ZT7X>SeXYS7E=1
+Z126 V4bS>>91Tlo^4AA3]@:BLn3
+Z127 !s100 kcm1cTe3ZT7X>SeXYS7E=1
 R7
 32
-R108
+R8
 !i10b 1
-R113
-R122
+R9
 R123
+R124
 !i113 1
 R12
 R13
 Etb_controller
-R0
-R31
+Z128 w1508311256
+R29
 R24
 R1
 R2
 R3
 R4
-Z124 8../testbench/tb_Controller.vhd
-Z125 F../testbench/tb_Controller.vhd
+Z129 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_Controller.vhd
+Z130 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_Controller.vhd
 l0
 L9
-V0>@NJz45o9SWL71JJI]AM2
+Vgfe=GJONhKe6kk@>o66`51
 !s100 QPYMI?@zF<fA]gVd9c[kS0
 R7
-31
-R27
+32
+R20
 !i10b 1
-R28
-Z126 !s90 -reportprogress|300|-93|../testbench/tb_Controller.vhd|
-Z127 !s107 ../testbench/tb_Controller.vhd|
+R21
+Z131 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_Controller.vhd|
+Z132 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_Controller.vhd|
 !i113 1
-o-93
+R12
 R13
 Atestbench
-R31
+R29
 R24
 R1
 R2
 R3
-DEx4 work 13 tb_controller 0 22 0>@NJz45o9SWL71JJI]AM2
+DEx4 work 13 tb_controller 0 22 gfe=GJONhKe6kk@>o66`51
 l102
 L15
-V7j=iLT=<Olz14_Hm7KfT72
-Z128 !s100 B[9jFA=_<]f06m5^zPY2g3
+Ve2jYVbmFgJI1WQLIbIW3:3
+!s100 _WkzDDFBPd:3LHMWS[AoW2
 R7
-31
-R27
+32
+R20
 !i10b 1
-R28
-R126
-R127
+R21
+R131
+R132
 !i113 1
-o-93
+R12
 R13
 Etb_extend
 R0
-Z129 DPx4 work 15 check_functions 0 22 onRRF7WGVmXHT2A`je1oj3
+R29
 R24
 R2
 R3
 R4
-Z130 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd
-Z131 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd
+Z133 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd
+Z134 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd
 l0
 L8
 V:z4;cTK4fD:^ncABmFI>S2
 !s100 bW1ZJ800R3O0<C<7nO4h:1
 R7
 32
-R8
+R20
 !i10b 1
-R9
-Z132 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd|
-Z133 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd|
+R21
+Z135 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd|
+Z136 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_Extend.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R129
+R29
 R24
 R2
 R3
@@ -1091,11 +1093,11 @@ V1n0GEj<a3I;ZfPX33DKWm0
 !s100 ]<=:`Bz:E4R@G9aC:<J>j3
 R7
 32
-R8
+R20
 !i10b 1
-R9
-R132
-R133
+R21
+R135
+R136
 !i113 1
 R12
 R13
@@ -1104,24 +1106,24 @@ R0
 R2
 R3
 R4
-Z134 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_GECKO.vhd
-Z135 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_GECKO.vhd
+Z137 8C:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_GECKO.vhd
+Z138 FC:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_GECKO.vhd
 l0
 L4
 V4mQ9Jg^>Ub]XQGBM=73h[1
 !s100 M92[;29_Yc:FoKCCIgj]?0
 R7
 32
-R8
+R20
 !i10b 1
-R9
-Z136 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_GECKO.vhd|
-Z137 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_GECKO.vhd|
+R21
+Z139 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_GECKO.vhd|
+Z140 !s107 C:\Users\vgarnier\Desktop\ArchOrd-EPFL\testbench\tb_GECKO.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R56
+R55
 R2
 R3
 DEx4 work 8 tb_gecko 0 22 4mQ9Jg^>Ub]XQGBM=73h[1
@@ -1131,23 +1133,23 @@ Vn;3]kRmjXegKL=3@UzTRg0
 !s100 1395I=^FjK==Lo:2:Ck6c3
 R7
 32
-R8
+R20
 !i10b 1
-R9
-R136
-R137
+R21
+R139
+R140
 !i113 1
 R12
 R13
 Etb_ir
 R0
-R129
+R29
 R24
 R2
 R3
 R4
-Z138 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd
-Z139 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd
+Z141 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd
+Z142 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd
 l0
 L8
 Veiom^XLQ@k=mXZKoZ?jTI1
@@ -1156,14 +1158,14 @@ R7
 32
 R8
 !i10b 1
-R9
-Z140 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd|
-Z141 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd|
+R21
+Z143 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd|
+Z144 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_IR.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R129
+R29
 R24
 R2
 R3
@@ -1176,21 +1178,21 @@ R7
 32
 R8
 !i10b 1
-R9
-R140
-R141
+R21
+R143
+R144
 !i113 1
 R12
 R13
 Etb_pc
 R0
-R129
+R29
 R24
 R2
 R3
 R4
-Z142 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd
-Z143 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd
+Z145 8C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd
+Z146 FC:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd
 l0
 L8
 V^bk@G38<Fg4Lk^TQK8k^n2
@@ -1200,13 +1202,13 @@ R7
 R8
 !i10b 1
 R9
-Z144 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd|
-Z145 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd|
+Z147 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd|
+Z148 !s107 C:/Users/vgarnier/Desktop/ArchOrd-EPFL/testbench/tb_PC.vhd|
 !i113 1
 R12
 R13
 Atestbench
-R129
+R29
 R24
 R2
 R3
@@ -1220,8 +1222,8 @@ R7
 R8
 !i10b 1
 R9
-R144
-R145
+R147
+R148
 !i113 1
 R12
 R13

@@ -124,13 +124,11 @@ end process;
 
 writing_op_alu: process(op, opx)
 begin
-
 op_alu <= "000000";
 if(op = "111010") then
 	if(opx = "001110") then op_alu <= "101101";
 	elsif(opx = "011011") then op_alu <= "110011";
 	end if;
 end if;
-		--elsif(opx = "011011") then op_alu <= "110011";
 end process;
 end synth;

@@ -103,7 +103,7 @@ branch_op <= '0';
 		nextState <= FETCH1;
 	when STORE =>
 		sel_addr <= '1';
-		sel_b <= '1';
+		sel_b <= '0';
 		write <= '1';
 		imm_signed <= '1';
 		nextState <= FETCH1;
@@ -131,6 +131,5 @@ if(op = "111010") then
 	elsif(opx = "011011") then op_alu <= "110011";
 	end if;
 end if;
-		--elsif(opx = "011011") then op_alu <= "110011";
 end process;
 end synth;

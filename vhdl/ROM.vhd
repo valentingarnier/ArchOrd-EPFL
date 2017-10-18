@@ -22,17 +22,25 @@ component ROM_Block is
 		);
 end component;
 	signal dataOut : std_logic_vector(31 downto 0);
+	signal read_cs : std_logic;
 begin
 	block0 : ROM_block
 	port map(address => address,
 		clock => clk,
 		q => dataOut);
 
-	tri_state : process(address)
+	tri_state : process(read_cs, dataOut)
 	begin
 		rddata <= (others => 'Z');
-		if((read AND cs) = '1') then
+		if(read_cs = '1') then
 		rddata <= dataOut;
+		end if;
+	end process;
+
+	synchronous : process(clk)
+	begin
+		if rising_edge(clk) then
+			read_cs <= read AND cs;
 		end if;
 	end process;
 end synth;

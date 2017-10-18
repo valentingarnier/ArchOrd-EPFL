@@ -125,7 +125,7 @@ begin
         );
 
     check : process
-        constant filename : string := "/home/archord/Downloads/lab03/modelsim/Controller/report.txt";
+        constant filename : string := "Controller/report.txt";
         file text_report : text is out filename;
         file text_input : text is in text_in;
         variable line_output : line;
