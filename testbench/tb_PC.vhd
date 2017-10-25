@@ -53,10 +53,10 @@ begin
         );
 
     check : process
-        constant filename : string := "/home/archord/Downloads/lab03/modelsim/PC/report.txt";
+        constant filename : string := "PC/report.txt";
         file text_report : text is out filename;
         variable line_output : line;
-        file text_input : text is in "/home/archord/Downloads/lab03/modelsim/PC/in.txt";
+        file text_input : text is in "PC/in.txt";
         variable line_input : line;
         variable counter    : integer := 0;
 

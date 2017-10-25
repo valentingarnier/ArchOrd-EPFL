@@ -36,10 +36,10 @@ begin
         );
 
     check : process
-        constant filename : string := "/home/archord/Downloads/lab03/modelsim/extend/report.txt";
+        constant filename : string := "extend/report.txt";
         file text_report : text is out filename;
         variable line_output : line;
-        file text_input : text is in "/home/archord/Downloads/lab03/modelsim/extend/in.txt";
+        file text_input : text is in "extend/in.txt";
         variable line_input : line;
         variable counter    : integer := 0;
 

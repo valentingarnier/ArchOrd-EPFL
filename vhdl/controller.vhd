@@ -37,7 +37,7 @@ entity controller is
 end controller;
 
 architecture synth of controller is
-type state is(FETCH1, FETCH2, DECODE, R_OP, I_OP, STORE, BREAK, LOAD1, LOAD2, BRANCH, CALL, JUMP, R_OP_IMM);
+type state is(FETCH1, FETCH2, DECODE, R_OP, I_OP, STORE, BREAK, LOAD1, LOAD2, BRANCH, CALL, JUMP, R_OP_IMM, I_OP_IMM);
 signal currentState, nextState : state;
 begin
 
@@ -71,22 +71,18 @@ begin
 	when DECODE => 
 		case op is
 		when "111010" =>
-			if(opx = "001110" OR opx = "011011") then
-				nextState <= R_OP;
-			elsif(opx = "110100") then
-				nextState <= BREAK;
-			elsif(opx = "000101") then
-				 nextState <= JUMP;
-			elsif(opx = "001101") then
-				nextState <= JUMP;
-			elsif(opx = "010011" OR opx = "011010" OR opx = "111010") then
-				nextState <= R_OP_IMM;
-			end if;
+			case opx is
+			when "110100" => nextState <= BREAK;
+			when "000101" | "001101" => nextState <= JUMP;
+			when "010010" | "011010" | "111010" => nextState <= R_OP_IMM;
+			when others => nextState <= R_OP;
+			end case;
 		when "000100" => nextState <= I_OP;
 		when "010111" => nextState <= LOAD1;
 		when "010101" => nextState <= STORE;
-		when ("000110" OR "001110" OR "010110" OR "011110" OR "100110" OR "101110" OR "110110")  => nextState <= BRANCH;
+		when "000110" | "001110" | "010110" | "011110" | "100110" | "101110" | "110110"  => nextState <= BRANCH;
 		when "000000" => nextState <= CALL;
+		when "001100" | "010100" | "011100" => nextState <= I_OP_IMM;
 		when others => nextState <= FETCH1;
 		end case;
 	when I_OP =>
@@ -118,11 +114,12 @@ begin
 	when BRANCH => 
 		sel_b <= '1';
 		pc_add_imm <= '1';
+		branch_op <= '1';
 		nextState <= FETCH1;
 	when CALL =>
 		pc_sel_imm <= '1';
+		pc_en <= '1';
 		sel_ra <= '1';
-		sel_rC <= '1';
 		sel_pc <= '1';
 		sel_mem <= '1';
 		rf_wren <= '1';
@@ -133,7 +130,9 @@ begin
 		nextState <= FETCH1;
 	when R_OP_IMM =>
 		 sel_rC <= '1';
-		sel_b <= '0';
+		rf_wren <= '1';
+		nextState <= FETCH1;
+	when I_OP_IMM =>
 		rf_wren <= '1';
 		nextState <= FETCH1;
 	when BREAK =>
@@ -160,6 +159,17 @@ if(op = "111010") then
 	elsif(opx = "010010") then op_alu <= "110010";
 	elsif(opx = "011010") then op_alu <= "110011";
 	elsif(opx = "111010") then op_alu <= "110111";
+	elsif(opx = "110001") then op_alu <= "000000"; --add
+	elsif(opx = "111001") then op_alu <= "001000"; --sub
+	elsif(opx = "001000") then op_alu <= "011001"; --cmpge
+	elsif(opx = "010000") then op_alu <= "011010"; --cmplt
+	elsif(opx = "000110") then op_alu <= "100000"; --nor
+	elsif(opx = "001110") then op_alu <= "100001"; --and
+	elsif(opx = "010110") then op_alu <= "100010"; --or
+	elsif(opx = "011110") then op_alu <= "100011"; --xor
+	elsif(opx = "010011") then op_alu <= "110010"; --sll
+	elsif(opx = "011011") then op_alu <= "110011"; --srl
+	elsif(opx = "111011") then op_alu <= "110111"; --sra
 	end if;
 --BRANCH
 elsif(op = "001110") then op_alu <= "011001"; --bge
@@ -174,18 +184,9 @@ elsif(op = "001100") then op_alu <= "100001"; --andi
 elsif(op = "010100") then op_alu <= "100010"; --ori
 elsif(op = "011100") then op_alu <= "100011"; --xori
 --ROP
-elsif(op = "110001") then op_alu <= "000000"; --add
-elsif(op = "111001") then op_alu <= "001000"; --sub
-elsif(op = "001000") then op_alu <= "011001"; --cmpge
-elsif(op = "010000") then op_alu <= "011010"; --cmplt
-elsif(op = "000110") then op_alu <= "100000"; --nor
-elsif(op = "001110") then op_alu <= "100001"; --and
-elsif(op = "010110") then op_alu <= "100010"; --or
-elsif(op = "011110") then op_alu <= "100011"; --xor
+
 --ROPIMM 
-elsif(op = "010011") then op_alu <= "110010"; --sll
-elsif(op = "011011") then op_alu <= "110011"; --srl
-elsif(op = "111011") then op_alu <= "110111"; --sra
+
 	
 end if;
 end process;
