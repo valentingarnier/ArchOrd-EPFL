@@ -29,6 +29,9 @@ begin
 			if(sel_imm = '1') then
 				myaddress <= "00000000000000" & imm & "00";
 			end if;
+			if(sel_a = '1') then
+				myaddress <= "0000000000000000" & a;
+			end if;
 		end if;
 	end process;
 

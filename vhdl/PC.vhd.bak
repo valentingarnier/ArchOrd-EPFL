@@ -27,7 +27,10 @@ begin
 			myaddress <= std_logic_vector(unsigned(myaddress) + 4);
 			end if;
 			if(sel_imm = '1') then
-				myaddress <= shift_left(unsigned(imm), 2);
+				myaddress <= "00000000000000" & imm & "00";
+			end if;
+			if(sel_a = '1') then
+				myaddress <= "0000000000000000" & a;
 			end if;
 		end if;
 	end process;

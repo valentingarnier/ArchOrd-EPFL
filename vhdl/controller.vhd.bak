@@ -37,7 +37,7 @@ entity controller is
 end controller;
 
 architecture synth of controller is
-type state is(FETCH1, FETCH2, DECODE, R_OP, I_OP, STORE, BREAK, LOAD1, LOAD2, BRANCH, CALL);
+type state is(FETCH1, FETCH2, DECODE, R_OP, I_OP, STORE, BREAK, LOAD1, LOAD2, BRANCH, CALL, JUMP, R_OP_IMM);
 signal currentState, nextState : state;
 begin
 
@@ -75,6 +75,12 @@ begin
 				nextState <= R_OP;
 			elsif(opx = "110100") then
 				nextState <= BREAK;
+			elsif(opx = "000101") then
+				 nextState <= JUMP;
+			elsif(opx = "001101") then
+				nextState <= JUMP;
+			elsif(opx = "010011" OR opx = "011010" OR opx = "111010") then
+				nextState <= R_OP_IMM;
 			end if;
 		when "000100" => nextState <= I_OP;
 		when "010111" => nextState <= LOAD1;
@@ -118,6 +124,17 @@ begin
 		sel_ra <= '1';
 		sel_rC <= '1';
 		sel_pc <= '1';
+		sel_mem <= '1';
+		rf_wren <= '1';
+		nextState <= FETCH1;
+	when JUMP => 
+		pc_en <= '1';
+		pc_sel_a <= '1';
+		nextState <= FETCH1;
+	when R_OP_IMM =>
+		 sel_rC <= '1';
+		sel_b <= '0';
+		rf_wren <= '1';
 		nextState <= FETCH1;
 	when BREAK =>
 		nextState <= BREAK; 
@@ -140,7 +157,36 @@ op_alu <= "000000";
 if(op = "111010") then
 	if(opx = "001110") then op_alu <= "101101";
 	elsif(opx = "011011") then op_alu <= "110011";
+	elsif(opx = "010010") then op_alu <= "110010";
+	elsif(opx = "011010") then op_alu <= "110011";
+	elsif(opx = "111010") then op_alu <= "110111";
 	end if;
+--BRANCH
+elsif(op = "001110") then op_alu <= "011001"; --bge
+elsif(op = "010110") then op_alu <= "011010"; --blt
+elsif(op = "011110") then op_alu <= "011011"; --bne
+elsif(op = "100110") then op_alu <= "011100"; --beq
+elsif(op = "101110") then op_alu <= "011101"; --bgeu
+elsif(op = "110110") then op_alu <= "011110"; --bltu
+--IOP
+elsif(op = "000100") then op_alu <= "000000"; --addi
+elsif(op = "001100") then op_alu <= "100001"; --andi
+elsif(op = "010100") then op_alu <= "100010"; --ori
+elsif(op = "011100") then op_alu <= "100011"; --xori
+--ROP
+elsif(op = "110001") then op_alu <= "000000"; --add
+elsif(op = "111001") then op_alu <= "001000"; --sub
+elsif(op = "001000") then op_alu <= "011001"; --cmpge
+elsif(op = "010000") then op_alu <= "011010"; --cmplt
+elsif(op = "000110") then op_alu <= "100000"; --nor
+elsif(op = "001110") then op_alu <= "100001"; --and
+elsif(op = "010110") then op_alu <= "100010"; --or
+elsif(op = "011110") then op_alu <= "100011"; --xor
+--ROPIMM
+elsif(op = "010011") then op_alu <= "110010"; --sll
+elsif(op = "011011") then op_alu <= "110011"; --srl
+elsif(op = "111011") then op_alu <= "110111"; --sra
+	
 end if;
 end process;
 end synth;
