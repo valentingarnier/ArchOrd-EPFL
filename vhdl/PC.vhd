@@ -26,16 +26,16 @@ begin
 		elsif rising_edge(clk) then
 			if(en = '1') then
 				if(add_imm = '1') then
-					myaddress <= std_logic_vector(unsigned(myaddress) + unsigned(imm));
+					myaddress <= std_logic_vector(unsigned(myaddress) + unsigned(imm(15 downto 2) & "00"));
 				elsif(sel_imm = '1') then
 					myaddress <= imm(13 downto 0) & "00";
 				elsif(sel_a = '1') then
-					myaddress <=  a;
+					myaddress <=  a(15 downto 2) & "00";
 				else myaddress <= std_logic_vector(unsigned(myaddress) + 4);
 				end if;
 			end if;
 		end if;
 	end process;
 
-	addr <="0000000000000000" & myaddress;
+	addr <= "0000000000000000" & myaddress;
 end synth;
