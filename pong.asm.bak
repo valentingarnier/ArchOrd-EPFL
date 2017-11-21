@@ -5,9 +5,9 @@
 .equ BUTTONS, 0x2030 ; Button addresses
 
 ;BEGIN: main
-	addi a0, zero, 4
-	addi a1, zero, 3
-	addi t1, zero, 1
+	addi a0, zero, 5
+	addi a1, zero, 4
+	addi t1, zero, -1
 	addi t2, zero, 1
 	stw a0, BALL(zero)
 	stw a1, BALL+4(zero)
@@ -18,6 +18,9 @@
 	addi t4, zero, 3
 	stw t3, PADDLES(zero)
 	stw t4, PADDLES+4(zero)
+
+	ldw font_data(3), SCORES(zero)
+	stw t6, SCORES+4(zero)
 	
 main:
 	addi sp, zero, LEDS 
@@ -26,10 +29,10 @@ main:
 	ldw a1, BALL+4(zero)
 
 	call set_pixel
+	call draw_paddles
 	call hit_test
 	call move_ball
 	call move_paddles
-	call draw_paddles
 	br main
 ;END: main
 
@@ -67,22 +70,116 @@ hit_test:
 
 	ldw t6, PADDLES(zero) ; position y du paddle 1
 	ldw t7, PADDLES+4(zero) ; position y du paddle 2
-
 	
-
-	cmpeqi t4, t0, 0
-	cmpeqi t5, t0, 11
-	or t4, t4, t5 ; si on est sur un des deux bords verticaux
-	beq t4, zero, test_y ; si rien a changer, alors go tester y
-	sub t2, zero, t2 ; pour partir d'un bord vertical on change juste la coordonnee x de la velocity
-	stw t2, BALL+8(zero)	
-test_y:
+	addi v0, zero, 0
+	
+test_bord_horizontal:
 	cmpeqi t4, t1, 0
 	cmpeqi t5, t1, 7
 	or t4, t4, t5 ; si on est sur un des deux bords horizontaux
-	beq t4, zero, hit_test_ret ; si rien a changer, alors return
-	sub t3, zero, t3 ; pour partir d'un bord vertical on change juste la coordonnee x de la velocity
+	beq t4, zero, test_bord_gauche ; si rien a changer, alors return
+	sub t3, zero, t3 ; pour partir d'un bord horizontal on change juste la coordonnee y de la velocity
 	stw t3, BALL+12(zero)
+
+test_bord_gauche:
+	cmpeqi t4, t0, 1
+	beq t4, zero, test_bord_droite
+	beq t1, t6, hit_paddle_front ; si on est en face des trois cases -> milieu
+	addi t6, t6, 1
+	beq t1, t6, hit_paddle_front ; -> front bas 
+	addi t6, t6, -2
+	beq t1, t6, hit_paddle_front ; -> front haut
+	
+	add t0, t0, t2 ; futur pos ball x
+	add t1, t1, t3 ; futur pos ball y
+
+	cmpeq t4, t1, t6 ; si notre futur y est sur le y du paddle
+	cmpeqi t5, t0, 0 ; si notre futur x est sur le x du paddle
+	
+	sub t0, t0, t2
+	sub t1, t1, t3 ; on retourne dans le hit paddle alors qu'il faut pas
+	
+	beq t4, zero, test_partie_inferieur_paddle_1 ; si notre futur y n'y est pas on se barre
+	beq t4, t5, velocity_inverse ; si la position est bien ce qu'on veut on inverse la velocity
+	addi v0, v0, 2 	
+	br hit_test_ret
+	
+	;l'autre x maintenant
+test_bord_droite:
+	cmpeqi t4, t0, 10
+	beq t4, zero, hit_test_ret ; si on est pas sur le bord droite on finit le hit test
+	beq t1, t7, hit_paddle_front ; front milieu
+	addi t7, t7, 1
+	beq t1, t7, hit_paddle_front ; font bas 
+	addi t7, t7, -2
+	beq t1, t7, hit_paddle_front ; front haut
+
+	add t0, t0, t2 ; calcul de la pos futur de la balle -> x
+	add t1, t1, t3 ; -> y
+
+	cmpeq t4, t1, t7 ; futur y est sur le paddle
+	cmpeqi t5, t0, 11 ; futur x est sur le paddle 
+
+	sub t0, t0, t2
+	sub t1, t1, t3 ; on retourne dans le hit paddle alors qu'il faut pas
+
+	beq t4, zero, test_partie_inferieur_paddle_2
+	beq t4, t5, velocity_inverse
+	addi v0, v0, 1
+	br hit_test_ret
+	
+test_partie_inferieur_paddle_1:
+	addi t6, t6, 2
+	add t0, t0, t2
+	add t1, t1, t3
+	cmpeq t4, t1, t6 ; si notre futur y est sur le paddle
+	cmpeqi t5, t0, 0 ; si notre futur x est sur notre paddle
+	sub t0, t0, t2
+	sub t1, t1, t3
+	beq t4, zero, winner2 ; si notre futur y n'y est pas on se barre
+	beq t4, t5, velocity_inverse ; si la position est bien ce qu'on veut on inverse la velocity	
+
+test_partie_inferieur_paddle_2:
+	addi t7, t7, 2
+	add t0, t0, t2
+	add t1, t1, t3
+	cmpeq t4, t1, t7 ; si notre futur y est sur le paddle
+	cmpeqi t5, t0, 11 ; si notre futur x est sur notre paddle
+	sub t0, t0, t2
+	sub t1, t1, t3
+	beq t4, zero, winner1 ; si notre futur y n'y est pas on se barre
+	beq t4, t5, velocity_inverse ; si la position est bien ce qu'on veut on inverse la velocity	
+
+winner1:
+	addi v0, v0, 1
+	br display_score
+
+winner2:
+	addi v0, v0, 2
+	br display_score
+
+velocity_inverse:
+	sub t2, zero, t2
+	stw t2, BALL+8(zero)
+	sub t3, zero, t3
+	stw t3, BALL+12(zero)
+
+	cmpeqi t4, t1, 0
+	cmpeqi t5, t1, 7
+	or t4, t4, t5
+	bne t4, zero, changing_velocity
+	br hit_test_ret
+	
+changing_velocity:
+ 	sub t3, zero, t3
+	stw t3, BALL+12(zero)
+	br hit_test_ret
+
+hit_paddle_front:
+	sub t2, zero, t2
+	stw t2, BALL+8(zero)
+	br hit_test_ret
+		
 hit_test_ret:
 	ret
 ;END: hit_test
@@ -170,3 +267,34 @@ draw_paddles:
 	
 ret
 ;END: draw_paddles
+
+;BEGIN: display_score
+display_score:
+	ldw t0, SCORES(zero) ; score player 1
+	ldw t1, SCORES+4(zero) ; score player 2
+
+	stw t0, LEDS(zero)
+	stw t1, LEDS+8(zero)
+	
+ret
+;END: display_score
+font_data:
+	.word 0x7E427E00 ; 0
+	.word 0x407E4400 ; 1
+	.word 0x4E4A7A00 ; 2
+	.word 0x7E4A4200 ; 3
+	.word 0x7E080E00 ; 4
+	.word 0x7A4A4E00 ; 5
+	.word 0x7A4A7E00 ; 6
+	.word 0x7E020600 ; 7
+	.word 0x7E4A7E00 ; 8
+	.word 0x7E4A4E00 ; 9
+	.word 0x7E127E00 ; A
+	.word 0x344A7E00 ; B
+	.word 0x42423C00 ; C
+	.word 0x3C427E00 ; D
+	.word 0x424A7E00 ; E
+	.word 0x020A7E00 ; F
+	.word 0x00181800 ; separator
+
+
