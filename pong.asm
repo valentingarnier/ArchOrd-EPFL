@@ -5,37 +5,74 @@
 .equ BUTTONS, 0x2030 ; Button addresses
 
 ;BEGIN: main
-	addi a0, zero, 5
-	addi a1, zero, 4
-	addi t1, zero, -1
-	addi t2, zero, 1
+
+reset_integral:
+	stw zero, SCORES(zero) ; score initial player 1
+	stw zero, SCORES+4(zero) ; score initial player 2
+	call display_score
+	
+reset:
+	addi a0, zero, 5 ; ball x
+	addi a1, zero, 4 ; ball y
+	addi t0, zero, 1 ; velocity x
+	addi t1, zero, 1 ; velocity y
 	stw a0, BALL(zero)
 	stw a1, BALL+4(zero)
-	stw t1, BALL+8(zero)
-	stw t2, BALL+12(zero)
+	stw t0, BALL+8(zero)
+	stw t1, BALL+12(zero)
 
+	addi t2, zero, 3 
 	addi t3, zero, 3
-	addi t4, zero, 3
-	stw t3, PADDLES(zero)
-	stw t4, PADDLES+4(zero)
+	stw t2, PADDLES(zero) ; paddle 1 milieu
+	stw t3, PADDLES+4(zero) ; paddle 2 milieu
 
-	ldw font_data(3), SCORES(zero)
-	stw t6, SCORES+4(zero)
+	addi t4, zero, 0
+	addi t5, zero, 0
+
 	
 main:
 	addi sp, zero, LEDS 
 	call clear_leds
+	
 	ldw a0, BALL(zero)
 	ldw a1, BALL+4(zero)
 
 	call set_pixel
 	call draw_paddles
 	call hit_test
+
+	beq v0, zero, go
+	slli t0, v0, 2
+	addi t0, t0, -4
+	ldw t1, SCORES(t0)
+	addi t1, t1, 1
+	stw t1, SCORES(t0)
+	call display_score
+	
+	ldw t1, SCORES+4(t0)
+	ldw t3, SCORES(t0)
+	cmpeqi t2, t1, 0xA
+	cmpeqi t4, t3, 0xA
+	or t5, t4, t2
+	bne t5, zero, reset_integral 
+
+	br reset
+
+go:
 	call move_ball
 	call move_paddles
+	call wait
 	br main
 ;END: main
 
+
+wait:
+	addi s1, zero, 1
+	slli s1, s1, 20
+	cmpeqi s2, s1, 0
+	beq s2, zero, wait
+	addi s1, s1, -1
+	ret
 
 ;BEGIN: clear_leds
 clear_leds:
@@ -152,11 +189,11 @@ test_partie_inferieur_paddle_2:
 
 winner1:
 	addi v0, v0, 1
-	br display_score
+	br hit_test_ret
 
 winner2:
 	addi v0, v0, 2
-	br display_score
+	br hit_test_ret
 
 velocity_inverse:
 	sub t2, zero, t2
@@ -273,9 +310,17 @@ display_score:
 	ldw t0, SCORES(zero) ; score player 1
 	ldw t1, SCORES+4(zero) ; score player 2
 
-	stw t0, LEDS(zero)
-	stw t1, LEDS+8(zero)
-	
+	slli t0, t0, 2
+	ldw t2, font_data(t0)
+
+	slli t1, t1, 2
+	ldw t3, font_data(t1)
+	addi t5, zero, 64
+	ldw t4, font_data(t5)
+
+	stw t2, LEDS(zero)
+	stw t3, LEDS+8(zero)
+	stw t4, LEDS+4(zero)
 ret
 ;END: display_score
 font_data:
