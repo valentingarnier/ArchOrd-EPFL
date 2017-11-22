@@ -6,10 +6,8 @@
 
 ;BEGIN: main
 
-reset_integral:
 	stw zero, SCORES(zero) ; score initial player 1
 	stw zero, SCORES+4(zero) ; score initial player 2
-	call display_score
 	
 reset:
 	addi a0, zero, 5 ; ball x
@@ -28,10 +26,17 @@ reset:
 
 	addi t4, zero, 0
 	addi t5, zero, 0
+	addi sp, zero, LEDS 
 
 	
 main:
-	addi sp, zero, LEDS 
+
+	call move_paddles
+
+	call hit_test
+
+	bne v0, zero, score_managing
+	call move_ball
 	call clear_leds
 	
 	ldw a0, BALL(zero)
@@ -39,9 +44,9 @@ main:
 
 	call set_pixel
 	call draw_paddles
-	call hit_test
-
-	beq v0, zero, go
+	call wait
+	br main
+score_managing:
 	slli t0, v0, 2
 	addi t0, t0, -4
 	ldw t1, SCORES(t0)
@@ -49,29 +54,34 @@ main:
 	stw t1, SCORES(t0)
 	call display_score
 	
+	
 	ldw t1, SCORES+4(t0)
 	ldw t3, SCORES(t0)
 	cmpeqi t2, t1, 0xA
 	cmpeqi t4, t3, 0xA
 	or t5, t4, t2
 	bne t5, zero, reset_integral 
-
+	call wait
+	call wait
+	call wait
+	call wait
+	call wait
 	br reset
 
-go:
-	call move_ball
-	call move_paddles
-	call wait
-	br main
+
+reset_integral: 
+	break
+
 ;END: main
 
 
 wait:
 	addi s1, zero, 1
 	slli s1, s1, 20
+loop:
 	cmpeqi s2, s1, 0
-	beq s2, zero, wait
 	addi s1, s1, -1
+	beq s2, zero, loop
 	ret
 
 ;BEGIN: clear_leds
