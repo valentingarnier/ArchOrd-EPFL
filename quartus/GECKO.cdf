@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EP4CE30F23) Path("C:/Users/vgarnier/Desktop/ArchOrd-EPFL/quartus/") File("GECKO.sof") MfrSpec(OpMask(1));
+		Device PartName(EP4CE30F23) Path("C:/Users/orchampt/Desktop/PONG/ArchOrd-EPFL/quartus/") File("GECKO.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

@@ -32,7 +32,6 @@ reset:
 main:
 
 	call move_paddles
-
 	call hit_test
 
 	bne v0, zero, score_managing
@@ -52,15 +51,16 @@ score_managing:
 	ldw t1, SCORES(t0)
 	addi t1, t1, 1
 	stw t1, SCORES(t0)
-	call display_score
-	
+
 	
 	ldw t1, SCORES+4(t0)
 	ldw t3, SCORES(t0)
 	cmpeqi t2, t1, 0xA
 	cmpeqi t4, t3, 0xA
 	or t5, t4, t2
-	bne t5, zero, reset_integral 
+	bne t5, zero, end_of_the_game 
+
+	call display_score
 	call wait
 	call wait
 	call wait
@@ -68,8 +68,8 @@ score_managing:
 	call wait
 	br reset
 
-
-reset_integral: 
+end_of_the_game: 
+	call display_score
 	break
 
 ;END: main

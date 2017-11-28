@@ -32,7 +32,7 @@ set_global_assignment -name LAST_QUARTUS_VERSION 16.0.0
 set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_palace
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED"
 set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "AS INPUT TRI-STATED"
-set_global_assignment -name SMART_RECOMPILE ON
+set_global_assignment -name SMART_RECOMPILE OFF
 set_global_assignment -name RESERVE_ALL_UNUSED_PINS_NO_OUTPUT_GND "AS INPUT TRI-STATED"
 set_global_assignment -name ENABLE_SIGNALTAP OFF
 set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
@@ -194,6 +194,9 @@ set_location_assignment PIN_M5 -to SDRAM_N_CAS
 set_location_assignment PIN_M4 -to SDRAM_N_RAS
 set_location_assignment PIN_U1 -to SDRAM_N_CS
 set_location_assignment PIN_R2 -to SDRAM_N_WE
+set_location_assignment PIN_G22 -to BUTTONS[4]
+set_location_assignment PIN_AA11 -to BUTTONS[5]
+set_location_assignment PIN_AB11 -to BUTTONS[6]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_COLOR 2147039 -section_id Top
 set_global_assignment -name LL_ROOT_REGION ON -section_id "Root Region"
@@ -205,28 +208,17 @@ set_location_assignment PIN_B11 -to IN_BUTTONS[0]
 set_location_assignment PIN_A11 -to IN_BUTTONS[1]
 set_location_assignment PIN_B12 -to IN_BUTTONS[2]
 set_location_assignment PIN_A12 -to IN_BUTTONS[3]
+set_global_assignment -name CROSS_BOUNDARY_OPTIMIZATIONS ON -section_id Top
+set_global_assignment -name QXP_FILE "decoder-decoder_0.qxp"
+set_global_assignment -name QXP_FILE "CPU-inst.qxp"
 set_global_assignment -name SDC_FILE GECKO.sdc
+set_global_assignment -name HEX_FILE ROM.hex
 set_global_assignment -name BDF_FILE GECKO.bdf
-set_global_assignment -name BDF_FILE ALU.bdf
-set_global_assignment -name BDF_FILE CPU.bdf
-set_global_assignment -name VHDL_FILE ../vhdl/add_sub.vhd
 set_global_assignment -name VHDL_FILE ../vhdl/buttons.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/comparator.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/controller.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/decoder.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/extend.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/IR.vhd
 set_global_assignment -name VHDL_FILE ../vhdl/LEDs.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/logic_unit.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/multiplexer.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/mux2x5.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/mux2x16.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/mux2x32.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/PC.vhd
 set_global_assignment -name VHDL_FILE ../vhdl/RAM.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/register_file.vhd
 set_global_assignment -name VHDL_FILE ../vhdl/ROM.vhd
 set_global_assignment -name VHDL_FILE ../vhdl/ROM_Block.vhd
-set_global_assignment -name VHDL_FILE ../vhdl/shift_unit.vhd
-set_global_assignment -name HEX_FILE ROM.hex
+set_global_assignment -name VHDL_FILE ../vhdl/RAM_obfuscated.vhd
+set_global_assignment -name VHDL_FILE ../vhdl/ROM_obfuscated.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
